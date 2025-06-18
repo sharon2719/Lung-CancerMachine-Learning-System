@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Lungradar App</string>
+    <string name="lungsIcon">Lungs Icon</string>
+    <string name="uploadXRayCt">Upload X-ray/CT</string>
+    <string name="pleaseUploadAClearMedicalImageForAnalysis">Please upload a clear medical image for analysis.</string>
+    <string name="useCamera">Use Camera</string>
+    <string name="selectImagesFromGalleryPngOnly">Select Images From Gallery \n PNG Only</string>
+    <string name="or">Or</string>
+    <string name="startAnalysis">Start Analysis</string>
+    <string name="analyse">Analyse</string>
+    <string name="history">History</string>
+    <string name="image">Image</string>
+    <string name="date">Date</string>
+    <string name="result">Result</string>
+    <string name="recent_lung_analysis">Recent Lung Analysis</string>
+    <string name="why_not_be_the_first_to_analyse">Why not be the first to analyse?</string>
+    <string name="it_s_quiet_here">It\'s quiet here...</string>
+    <string name="no_reviews">No Reviews</string>
+    <string name="back">Back</string>
+    <string name="actionable_recommendations_underlined"><u>Actionable recommendations</u></string>
+    <string name="confidence">Confidence: %.2f%%</string>
+    <string name="analysis_normal">Normal</string>
+    <string name="healthy_lifestyle_message">Maintain a healthy lifestyle!\n</string>
+    <string name="image_has_been_submitted_successfully">Image has been submitted successfully!</string>
+    <string name="the_lung_image_shows_no_signs_of_cancer">The lung image shows no signs of cancer.</string>
+    <string name="recommendation">Recommendation:</string>
+    <string name="maintain_a_healthy_lifestyle">Maintain a healthy lifestyle!</string>
+    <string name="selected_image">selected image\n</string>
+    <string name="confidence_format">Confidence: %.2f%%</string>
+    <string name="analysis_result">The lung image shows signs of %1$s.</string>
+    <string name="high_risk_advice">High Risk - Consult a pulmonologist immediately.</string>
+    <string name="low_risk_advice">Low Risk - Follow-up with regular screenings.</string>
+    <string name="analysis_image">Analyzed lung image showing potential cancer signs</string>
+
+
+</resources>

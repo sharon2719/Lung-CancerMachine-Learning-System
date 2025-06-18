@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_analyze"
+        android:icon="@drawable/analyse"
+        android:title="@string/analyse" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/history"
+        android:title="@string/history" />
+</menu>

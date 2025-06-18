@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Camera Feature -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Permissions for older versions (pre-Android 10) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <!-- Permissions for Android 11 and above (if necessary for broad access to storage) -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        android:required="false"
+        android:maxSdkVersion="30" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LungradarApp"
+        tools:targetApi="33">
+
+        <!-- Review Activities -->
+        <activity
+            android:name=".ReviewNormalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewCancerActivity"
+            android:exported="false" />
+
+        <!-- History Activity -->
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FileProvider Setup -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.lungradarapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.navigation.NavGraph xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_analyze">
+
+    <!-- Fragment for Analyze -->
+    <fragment
+        android:id="@+id/fragment_analyze"
+        android:name="com.example.lungradarapp.AnalyseFragment"
+        android:label="Analyze"
+        android:layout="@layout/fragment_analyse">
+
+        <!-- Action to Review Cancer -->
+        <action
+            android:id="@+id/action_to_review_cancer"
+            app:destination="@id/review_cancer_activity">
+            <argument
+                android:name="cancerType"
+                app:argType="string"
+                app:nullable="false" /> <!-- Changed to app:nullable -->
+            <argument
+                android:name="confidence"
+                app:argType="float"
+                app:nullable="false" /> <!-- Changed to app:nullable -->
+            <argument
+                android:name="risk"
+                app:argType="string"
+                app:nullable="false" /> <!-- Changed to app:nullable -->
+        </action>
+
+        <!-- Action to Review Normal -->
+        <action
+            android:id="@+id/action_to_review_normal"
+            app:destination="@id/review_normal_activity">
+            <argument
+                android:name="confidence"
+                app:argType="float"
+                app:nullable="false" /> <!-- Changed to app:nullable -->
+        </action>
+    </fragment>
+
+    <!-- Review Cancer Activity -->
+    <activity
+        android:id="@+id/review_cancer_activity"
+        android:name="com.example.lungradarapp.ReviewCancerActivity"
+        android:label="Review Cancer"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <!-- Review Normal Activity -->
+    <activity
+        android:id="@+id/review_normal_activity"
+        android:name="com.example.lungradarapp.ReviewNormalActivity"
+        android:label="Review Normal"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+</androidx.navigation.NavGraph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Normal palette -->
+    <color name="normal_bg">#F0FFF4</color>
+    <color name="normal_primary">#1D3557</color>
+    <color name="normal_sub">#4A4A4A</color>
+    <color name="normal_conf">#2A9D8F</color>
+    <color name="normal_card">#E0F7E9</color>
+
+    <!-- Cancer palette -->
+    <color name="cancer_bg">#FFF0F0</color>
+    <color name="cancer_primary">#B00020</color>
+    <color name="cancer_sub">#6E1E1E</color>
+    <color name="cancer_conf">#F4A261</color>
+    <color name="cancer_card">#FDE8E8</color>
+
+
+</resources>
